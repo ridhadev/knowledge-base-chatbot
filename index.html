@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            z-index: 1;
+        }
+	
+	  .header-text {
+	      color: #0071C5;
+	      display: flex;
+	      flex-direction: column;
+	      align-items: center;
+	      flex-grow: 1;
+	    }
+	header h1 {
+	  color: #0071C5;
+	  text-align: center;
+	  margin: 0;
+	}
+	.header-text h4 {
+            margin-top: 5px; /* Increase this value for more spacing */
+	    color: #0071C5;
+	}
+        .logo {
+	  font-size: 2rem;
+	  font-weight: bold;
+	  color: #222;
+	  height: 64px;
+	  width: auto;
+	}
+
+        .content {
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            color: black;
+            padding: 20px;
+        }
+
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about-section .about-table {
+            margin-left: 10px;
+        }
+        h2 {
+		color: #0071C5;
+	}
+	   </style>
+</head>
+
+<body>
+    <!-- Header -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="adnoc-logo.png" alt="ADNOC Logo" class="logo" >
+    </a>
+	 <div class="header-text">
+	    <h4>UAE Climate Tech Forum </h4>
+	</div>
+      <a class="navbar-brand" href="#">
+      <img src="uae_cop28.jpeg" alt="ADNOC Logo" class="logo" >
+    </a>
+  </nav>
+</header>
+    <div class="content">
+        <div id="customgpt_chat"></div>
+    </div>
+
+<!-- About Page -->
+<section id="about1" class="bg-light py-5">
+	<div class="container" id="about">
+		<h4 class="text-center mb-5">About This App</h4>
+		<div class="row">
+			<div class="col-md-6 mb-4">
+				<p>Our platform serves as a cutting-edge demonstration of the application of GPT (Generative Pretrained Transformer) technology to sustainability topic, specifically applied to ADNOC and UAE data.</p>
+<p>It consists of the construction of a searchable knowledge base about sustainability vision and strategy adopted by the UAE, and ADNOC in particular.</p>
+			</div>
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Developed by: </strong>ADNOC Technology</li>
+					<li class="list-group-item"><strong>Reference Documents:</strong> 
+					<ul>
+					<li>IEA Global Energy Review 2022</li>
+					<li>IPCC AR6 SYR SPM</li>
+					<li>API Climate Action Framework 2021</li>
+					<li>UAE ministry of Climate change and environment open data platform (2023)</li>
+					<li>UAE and The 2030 Agenda for Sustainable Development Excellence in Implementation (2023)</li>
+					<li>Last up to date sustainability report of: </li>
+						<ul>
+							<li>ADNOC</li>
+							<li>ADNOC GAS</li>
+							<li>ADNOC Distribution</li>
+							<li>ADNOC Drilling</li>
+							<li>Fertiglobe</li>
+							<li>Borouge</li>
+	
+						</ul>
+					</ul>
+                    <li class="list-group-item"><strong>Contact:</strong>
+<a href="mailto:rzegdane@adnoc.ae">Ridha Zegdane (rzegdane@adnoc.ae)</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+    <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="540px" p_id="1456" p_key="92e735a5d0c8d1e41f7e071807f8db9f" div_id="customgpt_chat"></script>
+</body>
+</html>
